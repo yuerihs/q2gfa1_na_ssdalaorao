@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+#videobackground{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    background-color: rgb(119, 0, 0);
+    justify-content: space-around;
+    padding: 1vw;
+    border-bottom: #000000 solid 3px;
+}
+.pagetitle{
+    font-family: 'Caveat', cursive;
+    color: #ffffff;
+    font-size: x-large;
+    text-shadow: #240046 1px 1px;
+}
+.links a{
+    font-family: 'Silkscreen', sans-serif;
+    color: #ffffff;
+    text-shadow: #240046 1px 1px;
+    margin-left: 1vw;
+    text-decoration: none;
+}
+.banner{
+    padding: 5vw;
+    margin-top: 10vw;
+    background-color: rgba(199, 66, 66, 0.503);
+}
+.bannerhead{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+}
+p{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+}
+footer{
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0vw;
+    background-color: rgb(119, 0, 0);
+    border-top: #000000 solid 3px;
+}
+.icon{
+	background: url(../images/sprite3.png) no-repeat;
+    display: inline-block;
+    scale: 0.8;
+    border: #ffffff solid 2px;
+	width: 66px;
+	height: 66px;
+}
+#Facebook{background-position: -439px -146px;}
+#Instagram{background-position: -290px -221px;}
+#Twitter{background-position: -66px -72px;}
+#Gmail{background-position: -365px -221px}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: rgb(119, 0, 0);
+        border-bottom: #000000 solid 3px;
+    }
+    .pagetitle{
+        background-color: #9d3737;
+        padding: 1vw;
+        color: white;
+    }
+    .links{
+        display: none;
+        position: absolute; 
+        background-color:#5f0d0d;
+        min-width:100vw;
+    }
+    .links a{
+        color: rgb(255, 255, 255);
+        padding: 1vw;
+        display: block;
+    }
+    .links a:hover{
+        width: 100vw;
+        background-color: #c27171; 
+        transition: .3s;
+    }
+    nav:hover .links{
+        color: #ffffff;
+        display: block;
+        transition: .3s;
+    }
+
+}
